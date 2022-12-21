@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebeaeb;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2.4rem;
+}
+a {
+  font-size: 1.6rem;
+}
+p {
+  font-size: 1.6rem;
+}
+
+/* ########## WITHDRAW ############  */
+
+.ud-withdraw {
+  width: 100%;
+  height: auto;
+  padding: 5rem 0;
+}
+.ud-withdraw .withdraw {
+  margin-bottom: 5rem;
+}
+.ud-withdraw .withdraw h2 {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+.ud-withdraw .withdraw h2 .colon {
+  margin: 0 10px;
+}
+.ud-withdraw .withdraw p {
+  width: 60%;
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.ud-withdraw .withdraw a {
+  display: inline-block;
+  background-color: black;
+  padding: 1rem 8px;
+  border-radius: 50px;
+}
+
+.ud-withdraw .withdraw .icon1 img {
+  width: 50px;
+  height: auto;
+}
+.ud-withdraw .withdraw .title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  margin: 0 15px;
+  padding: 0 20px;
+}
+.ud-withdraw .withdraw .icon2 img {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+.ud-withdraw .saved-wallet {
+}
+.ud-withdraw .saved-wallet .saved-wallet-content {
+}
+.ud-withdraw .saved-wallet .saved-wallet-content .content {
+  width: 70%;
+}
+.ud-withdraw .saved-wallet .saved-wallet-content .content h2 {
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+.ud-withdraw .saved-wallet .saved-wallet-content .content .colon {
+  margin: 0 10px;
+}
+.ud-withdraw .saved-wallet .saved-wallet-content .content p {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.ud-withdraw .saved-wallet .saved-wallet-content .icons {
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 20px 10px;
+  margin-left: 5rem;
+}
+.ud-withdraw .saved-wallet .saved-wallet-content .icons img {
+  margin-right: 1rem;
+}
+
+/* ######### SCROLL ###########  */
+.scroll {
+  height: 250px;
+  overflow-y: scroll;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  position: relative;
+  color: blue;
+  font-size: 2rem;
+  border: 2px solid green;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+label::before {
+  position: absolute;
+  right: 20px;
+
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 2px solid green;
+  border-radius: 50%;
+}
+input[type="radio"]:checked + label::before {
+  background-color: black;
+}
+
+/* ########### WITHDRAW CARD ##########  */
+.withdraw-card {
+  border: 3px solid transparent;
+  border-image: linear-gradient(171deg, #000000, #3787ff, #001aff);
+  border-image-slice: 1;
+}
