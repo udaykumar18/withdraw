@@ -102,11 +102,18 @@ p {
 .ud-withdraw .saved-wallet .saved-wallet-content .icons {
   border: 2px solid grey;
   border-radius: 20px;
-  padding: 20px 10px;
+  padding: 20px 0;
   margin-left: 5rem;
 }
-.ud-withdraw .saved-wallet .saved-wallet-content .icons img {
+.ud-withdraw .saved-wallet .saved-wallet-content .icons .add {
+  padding: 0 1rem;
+  margin: 0 1em;
+}
+.ud-withdraw .saved-wallet .saved-wallet-content .icons .lines {
   margin-right: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
 }
 
 /* ######### SCROLL ###########  */
@@ -203,7 +210,7 @@ input[type="radio"]:checked + label::before {
 }
 
 .withdraw-card .card-input1 {
-  margin: 3rem 0;
+  margin: 4rem 0;
 }
 .withdraw-card .card-input1 h3 {
   font-size: 1.6rem;
@@ -221,6 +228,17 @@ input[type="radio"]:checked + label::before {
   box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.55),
     inset 10px 10px 15px rgba(70, 70, 70, 0.12);
   outline: none;
+}
+.withdraw-card .card-input2 .text-area {
+  position: relative;
+}
+.withdraw-card .card-input2 .text-area .lines {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
 }
 .withdraw-card .card-input2 {
   margin: 3rem 0;
@@ -245,7 +263,7 @@ input[type="radio"]:checked + label::before {
 /* #### WITHDRAW BUTTON #####  */
 
 .withdraw-card .withdraw-btn {
-  margin: 3rem 0;
+  margin-top: 6rem;
 }
 .withdraw-card .withdraw-btn a {
   padding: 10px;
