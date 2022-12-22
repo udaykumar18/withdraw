@@ -121,13 +121,14 @@ label {
   position: relative;
   color: blue;
   font-size: 2rem;
-  border: 2px solid green;
-  padding: 10px 20px;
+  border: 2px solid grey;
+  padding: 25px 20px;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
   cursor: pointer;
   border-radius: 15px;
+  margin-right: 10px;
 }
 label::before {
   position: absolute;
@@ -136,16 +137,153 @@ label::before {
   content: "";
   width: 20px;
   height: 20px;
-  border: 2px solid green;
+  border: 2px solid grey;
   border-radius: 50%;
 }
 input[type="radio"]:checked + label::before {
-  background-color: black;
+  background-color: #7bffe7;
 }
 
 /* ########### WITHDRAW CARD ##########  */
+.card-padding {
+  padding: 0 3rem;
+}
 .withdraw-card {
-  border: 3px solid transparent;
-  border-image: linear-gradient(171deg, #000000, #3787ff, #001aff);
-  border-image-slice: 1;
+  background-color: #eaeaea;
+  padding: 3rem 5rem;
+  border-radius: 30px;
+}
+.gradient-border {
+  border-radius: 30px;
+  border: double 3px transparent;
+  /* border-image: linear-gradient(171deg, #000000, #3787ff, #001aff); */
+  background-image: linear-gradient(white, white),
+    linear-gradient(171deg, #000000, #3787ff, #001aff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.withdraw-card h2 {
+  font-size: 3.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 4.5rem;
+}
+.withdraw-card .network-choose {
+}
+.withdraw-card .network-choose h3 {
+  font-size: 1.6rem;
+  margin: 2rem 0;
+  font-weight: 400;
+}
+.withdraw-card .network-choose h3 .colon {
+  margin: 0 10px;
+}
+.withdraw-card .network-choose a {
+  display: inline-block;
+  background-color: black;
+  padding: 1rem 8px;
+  border-radius: 50px;
+}
+.withdraw-card .network-choose a .icon1 img {
+  width: 50px;
+  height: auto;
+}
+.withdraw-card .network-choose a .title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  margin: 0 15px;
+  padding: 0 20px;
+}
+.withdraw-card .network-choose a .icon2 img {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+.withdraw-card .card-input1 {
+  margin: 3rem 0;
+}
+.withdraw-card .card-input1 h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.withdraw-card .card-input1 input[type="text"] {
+  font-size: 1.4rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: #e0e0e0;
+  background-color: transparent;
+  box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.55),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  outline: none;
+}
+.withdraw-card .card-input2 {
+  margin: 3rem 0;
+}
+.withdraw-card .card-input2 h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+.withdraw-card .card-input2 input[type="text"] {
+  font-size: 1.4rem;
+  padding: 2rem 1rem;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid black;
+  background: #e0e0e0;
+  background-color: transparent;
+  box-shadow: inset -10px -10px 15px rgba(255, 255, 255, 0.55),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+  outline: none;
+}
+/* #### WITHDRAW BUTTON #####  */
+
+.withdraw-card .withdraw-btn {
+  margin: 3rem 0;
+}
+.withdraw-card .withdraw-btn a {
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.55),
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+.withdraw-card .withdraw-btn .title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: black;
+  margin-left: 3rem;
+}
+.withdraw-card .withdraw-btn .icon img {
+  width: 70px;
+}
+
+.footer {
+  width: 1000px;
+
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.footer p {
+  font-size: 1.4rem;
+  color: #626262;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #ebeaeb;
+  border-radius: 10px;
+  border: 2px solid rgb(201, 186, 186);
+}
+::-webkit-scrollbar-thumb {
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 10px;
 }
