@@ -105,6 +105,9 @@ p {
   gap: 15px;
   color: gray;
 }
+.options p {
+  margin-bottom: 0;
+}
 
 .options img {
   width: 25px;
