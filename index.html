@@ -26,14 +26,43 @@
                 Select your preferred coin for depositing your cryptocurrencies
                 to your account.
               </p>
-              <a href="#">
-                <span class="icon1">
-                  <img src="img/bitcoin.svg" alt="" />
-                </span>
-                <span class="title">BTC (Bitcoin)</span>
-                <span class="icon2">
-                  <img src="img/Polygon 2.svg" alt="" />
-                </span>
+              <!-- ### SELECT MENU #### -->
+              
+                <div class="selector">
+                  <div id="selectorField" class="d-flex  align-items-center">
+                    <div class="coin-img">
+                      <img src="img/bitcoin.svg" alt="" id="selectorCoin" />
+                    </div>
+                    <p id="selectorText">BTC (Bitcoin)</p>
+                    <div class="arrow">
+                      <img src="img/Polygon 2.svg" alt="" />
+                    </div>
+                  </div>
+                  <ul id="list" class="hide">
+                    <li class="options d-flex align-items-center">
+                      <img src="img/coin2.svg" alt="" />
+                      <p>COIN1</p>
+                    </li>
+                    <li class="options d-flex align-items-center">
+                      <img src="img/coin2.svg" alt="" />
+            
+                      <p>COIN2</p>
+                    </li>
+                    <li class="options d-flex align-items-center">
+                      <img src="img/coin3.svg" alt="" />
+                      <p>COIN3</p>
+                    </li>
+                    <li class="options d-flex align-items-center">
+                      <img src="img/coin3.svg" alt="" />
+                      <p>COIN4</p>
+                    </li>
+                    <li class="options d-flex align-items-center">
+                      <img src="img/coin2.svg" alt="" />
+                      <p>COIN5</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- ### SELECT MENU ####  -->
               </a>
             </div>
             <div class="saved-wallet">
@@ -91,6 +120,8 @@
                     <h3>
                       Choose Transfer Network <span class="colon">:</span>
                     </h3>
+                                       
+
                     <a href="#">
                       <span class="icon1">
                         <img src="img/bitcoin.svg" alt="" />
@@ -145,6 +176,25 @@
       </div>
     </section>
     <!-- JAVASCRIPT  -->
+    <script>
+       var selectorField = document.getElementById("selectorField");
+      var selectorText = document.getElementById("selectorText");
+      var selectorCoin = document.getElementById("selectorCoin");
+      var options = document.getElementsByClassName("options");
+      var list = document.getElementById("list");
+
+      selectorField.onclick = function () {
+        list.classList.toggle("hide");
+      };
+      for (option of options) {
+        option.onclick = function () {
+          selectorText.innerHTML = this.textContent;
+          selectorCoin.innerHTML = this.src;
+          console.log(this.src);
+          list.classList.toggle("hide");
+        };
+      }
+    </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>

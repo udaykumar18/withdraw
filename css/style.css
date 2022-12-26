@@ -54,31 +54,71 @@ p {
 .ud-withdraw .withdraw p {
   width: 60%;
   font-size: 1.6rem;
-  margin-bottom: 4rem;
-}
-.ud-withdraw .withdraw a {
-  display: inline-block;
-  background-color: black;
-  padding: 1rem 8px;
-  border-radius: 50px;
 }
 
-.ud-withdraw .withdraw .icon1 img {
-  width: 50px;
-  height: auto;
+/* #### SELECT MENU ####  */
+.selector {
+  margin-top: 4rem;
+  width: 350px;
+  position: relative;
 }
-.ud-withdraw .withdraw .title {
-  font-size: 1.8rem;
+#selectorField {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 1rem;
+
+  box-sizing: border-box;
+  background: black;
+  border-radius: 10px;
+  color: white;
+  border-radius: 50px;
+}
+#selectorField p {
+  font-size: 2rem;
   font-weight: 500;
   color: white;
-  margin: 0 15px;
+  margin: 0 18px;
   padding: 0 20px;
 }
-.ud-withdraw .withdraw .icon2 img {
-  width: 18px;
-  height: 18px;
-  margin-right: 20px;
+#selectorField .coin-img img {
+  width: 45px;
 }
+#selectorField .arrow img {
+  width: 18px;
+  margin-left: 1rem;
+}
+
+#list {
+  width: 100%;
+
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9;
+  padding-left: 0;
+}
+.options {
+  width: 100%;
+
+  padding: 15px;
+  gap: 15px;
+  color: gray;
+}
+
+.options img {
+  width: 25px;
+}
+
+.options:hover {
+  background-color: black;
+}
+
+.hide {
+  display: none;
+}
+
+/* #### SELECT MENU ####  */
 
 .ud-withdraw .saved-wallet {
 }
